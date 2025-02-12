@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: #F0EBE3; */
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+.navbar{
+    height: 60px;
+    padding: 0rem 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: #F0EBE3; */
+}
+.nav-logo{
+    height: 50px;
+    width: 70px;
+    margin-left: 2.5rem;
+}
+.nav-logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    scale: 1.9;
+}
+button{
+    color: white;
+    font-size: 0.95rem;
+    font-family: 'Outfit';
+    padding: 0.5rem 1.3rem;
+    margin-right: 0.2rem;
+    border: none;
+    border-radius: 1.5rem;
+    background: #E21b70;
+}
+.login{
+    background:none;
+    color: black;
+    border: 1px solid #E21b70;
+    margin-right: 0.5rem;
+}
+.hero-section{
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* background: #F0EBE3; */
+}
+.hero-card{
+    height: 95%;
+    width: 95%;
+    margin-top: -1rem;
+}
+.box{
+    height: 40%;
+    width: 100%;
+}
+.img-part img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 0.8;
+    border-radius: 15px;
+}
+.content-part{
+    height: 60%;
+    text-align: center;
+    padding: 0rem 10rem;
+}
+.content-part h1{
+    font-family: 'Space Grotesk';
+    font-size: 3rem;
+    letter-spacing: -2.5px;
+}
+.content-part p{
+    font-family: 'Space Grotesk';
+    font-size: 1.3rem;
+    font-weight: 550;
+    margin-top: 3.5rem;
+    letter-spacing: -1px;
+}
+#hero-input{
+    height: 45px;
+    width: 400px;
+    margin-top: 25px;
+    font-family: 'DM Sans';
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+    background: white;
+    border: none;
+    color: black;
+    border-radius: 25px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+#hero-input:focus{
+    outline: none;
+    border: none;
+}
+.findbtn{
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+    padding: 0.6rem 1.6rem;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    margin-left: -130px;
+    letter-spacing: -0.5px;
+}
+.hero-section-two{
+    font-family: 'Space Grotesk';
+    padding: 1rem 3rem 1rem 7rem;
+}
+.hero-section-two h1{
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    letter-spacing: -2px;
+}
+.cities{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.city-card{
+    height: 15rem;
+    width: 16.5rem;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.city-card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+.city-card:hover img{
+    transform: scale(1.08);
+}
+.city-title{
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    left: auto;
+    border-radius: 7px;
+}
+.city-title p{
+    font-family: 'Space Grotesk';
+    background: #fff;
+    padding: 0.45rem 1rem;
+    font-size: 1.05rem;
+    letter-spacing: -1px;
+    border-radius: 7px;
+    font-weight: 550;
+}
+.hero-section-three{
+    margin-top: 5rem;
+    font-family: 'Space Grotesk';
+    padding: 1rem 7rem;
+    height: 80%;
+    overflow: hidden;
+}
+.hero-section-three h1{
+    letter-spacing: -2px;
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+}
+.outer-card{
+    width: 100%;
+    height: 70%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    margin-top: 1rem;
+    width: 100%;
+    height: 80%;
+    border-radius: 15px;
+    background: #E21b70;
+    display: flex;
+    flex-wrap: wrap;
+}
+.section{
+    width: 50%;
+    height: 100%;
+    background: #E21b70;
+    border-radius: 15px;
+}
+.card-left{
+    padding: 2rem;
+    color: white;
+    font-family: 'DM Sans';
+}
+.card-left h1{
+    font-size: 1.7rem;
+    background: none;
+    letter-spacing: -0.8px;
+    font-weight: 500;
+}
+.card-left p{
+    background: none;
+    font-size: 1rem;
+    letter-spacing: -0.5px;
+    padding-right: 10rem;
+}
+.getbtn{
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #35061a;
+}
+.card-right img{
+    position: absolute;
+    background: none;
+    height: 100%;
+    width: 100%;
+    scale: 1.4;
+    object-fit: contain;
+    right: -17rem;
+    top: -0.5rem;
+    left: auto;
+    bottom: auto;
+}
+footer{
+    display: flex;
+    align-items: center;
+    font-family: 'DM Sans';
+    padding: 0 7rem;
+    border-top: 1px dashed #E21b70;
+    height: 120px;
+}
+.link-prt{
+    display: flex;
+    gap: 0.5rem;
+    font-size: 23px;
+}
+.link-prt a{
+    text-decoration: none;
+    color: black;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+.link-prt a:hover{
+    background: #ededed;
+}
+.logo-prt{
+    display: flex;
+    gap: 1.2rem;
+}
+.logo{
+    width: 15%;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.foodpanda img{
+    scale: 0.85;
+}
+.delivery img{
+    scale: 1.25;
+}
+/** Responsive Code **/
+
+ /* for Tablets */
+@media (min-width: 769px) and (max-width: 950px) {
+    *{
+        background: #fff;
+    }
+    .navbar{
+        padding: 0rem 5rem;
+        background: white;
+    }
+    .nav-logo img{
+        scale:1.6;
+    }
+    button{
+        font-size: 0.85rem;
+        padding: 0.46rem 1.25rem;
+    }
+    .login{
+        margin-right: 0.2rem;
+    }
+    .hero-section{
+        background-color: #fff;
+    }
+    .hero-card{
+        margin-top: -1.5rem;
+    }
+    .content-part{
+        padding: 0rem 6rem;
+    }
+    .content-part h1{
+        font-size: 2rem;
+    }
+    .content-part p{
+        font-size: 1.2rem;
+        margin-top: 3rem;
+    }
+    #hero-input{
+        height: 40px;
+        width: 350px;
+        margin-top: 25px;
+        font-size: 0.9rem;
+    }
+    .findbtn{
+        font-size: 1rem;
+        padding: 0.6rem 1.6rem;
+    }
+    .hero-section-two{
+        margin-top: -20rem;
+        padding: 0rem 4rem;
+    }
+    .hero-section-two h1{
+        font-size: 1.6rem;
+    }
+    .cities{
+        gap: 1.25rem;
+    }
+    .city-card{
+        width: 21rem;
+    }
+    .hero-section-three{
+        margin-top: 3rem;
+        padding: 0rem 3rem;
+    }
+    .hero-section-three h1{
+        font-size: 1.7rem;
+        margin-bottom: 0;
+    }
+    .outer-card{
+        height: 85%;
+    }
+    .card{
+        height: 90%;
+    }
+    .section{
+        width: 100%;
+        height: 50%;
+    }
+    .card-left{
+        padding: 2rem;
+    }
+    .card-left h1{
+        font-size: 1.8rem;
+        margin-bottom: 1.1rem;
+    }
+    .card-left p{
+        padding-right: 2rem;
+        font-size: 1.2rem;
+        letter-spacing: -0.1px;
+    }
+    .getbtn{
+        display: block;
+        margin-top: 20px;
+    }
+    .card-right img{
+        right: auto;
+        top: auto;
+        bottom: -10rem;
+        scale: 1.1;
+    }
+    footer{
+        padding: 1rem 2rem 0;
+    }
+    .logo{
+        width: 25%;
+    }
+}
+@media (min-width:652px) and (max-width:768px) {
+    *{
+        background: #fff;
+    }
+    .navbar{
+        padding: 0rem 5rem;
+        background: white;
+    }
+    .nav-logo img{
+        scale:1.6;
+    }
+    button{
+        font-size: 0.85rem;
+        padding: 0.46rem 1.25rem;
+    }
+    .login{
+        margin-right: 0.2rem;
+    }
+    .hero-section{
+        background-color: #fff;
+    }
+    .hero-card{
+        margin-top: -1.5rem;
+    }
+    .content-part{
+        padding: 0rem 6rem;
+    }
+    .content-part h1{
+        font-size: 2rem;
+    }
+    .content-part p{
+        font-size: 1.2rem;
+        margin-top: 3rem;
+    }
+    #hero-input{
+        height: 40px;
+        width: 350px;
+        margin-top: 25px;
+        font-size: 0.9rem;
+    }
+    .findbtn{
+        font-size: 1rem;
+        padding: 0.6rem 1.6rem;
+    }
+    .hero-section-two{
+        margin-top: -15rem;
+        padding: 0rem 3rem;
+    }
+    .hero-section-two h1{
+        font-size: 1.6rem;
+    }
+    .cities{
+        gap: 1.2rem;
+    }
+    .city-card{
+        width: 20rem;
+    }
+}
+/* for mobiles */
+@media (max-width: 650px) {
+    *{
+        background: #fff;
+    }
+    .navbar{
+        padding: 0rem 0.5rem;
+        background: white;
+        height: 65px;
+    }
+    .nav-logo img{
+        scale: 1.7;
+    }
+    button{
+        display: none;
+    }
+    .hero-section{
+        background: white;
+    }
+    .hero-card{
+        width: 100%;
+    }
+    .img-part{
+        height: 30%;
+    }
+    .img-part img{
+        scale: 0.9;
+        height: 90%;
+    }
+    .content-part{
+        height: 70%;
+        padding: 0rem 0.8rem;
+    }
+    .content-part h1{
+        font-size: 1.7rem;
+        letter-spacing: -1.35px;
+        border-bottom: 1px solid gainsboro;
+        padding-bottom: 35px;
+    }
+    .idk{
+        display: grid;
+        place-items: center;
+    }
+    .content-part p{
+        font-size: 1.25rem;
+        margin-top: 2.5rem;
+    }
+    #hero-input{
+        width: 300px;
+    }
+    .findbtn{
+        display: block;
+        margin: 0.9rem;
+        padding: 0.8rem 7.25rem;
+    }
+    .hero-section-two{
+        margin-top: -5.5rem;
+        padding: 0rem 1.6rem ;
+    }
+    .hero-section-two h1{
+        font-size: 1.5rem;
+        letter-spacing: -1.5px;
+    }
+    .cities{
+        gap: 0.8rem;
+    }
+    .city-card{
+        width: 100%;
+    }
+    .city-title{
+        right: auto;
+        left: 6px;
+    }
+    .hero-section-three{
+        margin-top: 3rem;
+        padding: 0rem 1.6rem;
+    }
+    .hero-section-three h1{
+        font-size: 1.7rem;
+        margin-bottom: 0;
+    }
+    .outer-card{
+        height: 85%;
+    }
+    .card{
+        height: 100%;
+    }
+    .section{
+        width: 100%;
+        height: 50%;
+    }
+    .card-left{
+        padding: 1rem;
+    }
+    .card-left h1{
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+    .card-left p{
+        padding-right: 0;
+        font-size: 0.9rem;
+        letter-spacing: -0.1px;
+    }
+    .getbtn{
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .card-right img{
+        right: auto;
+        top: auto;
+        bottom: -10rem;
+        scale: 1.27;
+    }
+    footer{
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .logo{
+        width: 50%;
+    }
+    .link-prt{
+        visibility: hidden;
+    }
+  
+}
