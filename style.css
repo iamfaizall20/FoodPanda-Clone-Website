@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background: #F0EBE3; */
 }
 body{
     height: 100vh;
@@ -15,7 +14,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background: #F0EBE3; */
 }
 .nav-logo{
     height: 50px;
@@ -50,7 +48,6 @@ button{
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    /* background: #F0EBE3; */
 }
 .hero-card{
     height: 95%;
@@ -67,6 +64,15 @@ button{
     object-fit: cover;
     scale: 0.8;
     border-radius: 15px;
+    animation: image 1s ease-in-out;
+}
+@keyframes image {
+    from{
+        transform: translateY(-5px);
+    }
+    to{
+        transform: translateY(0);
+    }
 }
 .content-part{
     height: 60%;
@@ -77,6 +83,15 @@ button{
     font-family: 'Space Grotesk';
     font-size: 3rem;
     letter-spacing: -2.5px;
+    animation: text 2s ease-in-out;
+}
+@keyframes text {
+    from{
+        transform: translateY(5px);
+    }
+    to{
+        transform: translateY(0);
+    }
 }
 .content-part p{
     font-family: 'Space Grotesk';
@@ -84,6 +99,7 @@ button{
     font-weight: 550;
     margin-top: 3.5rem;
     letter-spacing: -1px;
+    animation: text 2s linear;
 }
 #hero-input{
     height: 45px;
@@ -130,6 +146,16 @@ button{
     border-radius: 15px;
     position: relative;
     overflow: hidden;
+    animation: appear ease;
+    animation-timeline: view();
+}
+@keyframes appear {
+    from{
+        scale: 0.3;
+    }
+    to{
+        scale: 1;
+    }
 }
 .city-card img{
     height: 100%;
@@ -553,6 +579,5 @@ footer{
     }
     .link-prt{
         visibility: hidden;
-    }
-  
+    } 
 }
